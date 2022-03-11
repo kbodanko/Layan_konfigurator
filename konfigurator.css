@@ -181,6 +181,8 @@ main {
     width: 85%;
   }
   .price_button_wraper {
+    flex-direction: row;
+    align-items: center;
     margin-top: 1rem;
   }
   .products {
