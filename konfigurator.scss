@@ -11,7 +11,6 @@ main{
     background-position-y: top;
 }
 .container_bg{
-    height: 100%;
     display: flex;
     justify-content: center;
 }
@@ -19,6 +18,7 @@ main{
     width: 95%;
     padding: 1rem;
     border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
     backdrop-filter: blur(1rem);
     background-color: #ffffffab;
 }
