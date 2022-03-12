@@ -73,7 +73,7 @@ main {
   padding: .5rem 1rem;
   box-shadow: 2px 2px 4px #556b80;
   background-color: white;
-  transition: .9s;
+  transition: .3s;
 }
 
 .product_card:hover {
@@ -131,12 +131,8 @@ main {
 .choose_p {
   margin: 0;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #ff461b;
-}
-
-.product_card:hover .choose_p {
-  transform: scale(1.1);
 }
 
 .summary_button {
@@ -227,5 +223,8 @@ main {
     flex-direction: row;
     align-items: center;
     margin-top: 1rem;
+  }
+  .summary_button {
+    margin: 0;
   }
 }

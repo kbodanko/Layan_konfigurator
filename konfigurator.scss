@@ -68,7 +68,7 @@ main{
     padding: .5rem 1rem;
     box-shadow: 2px 2px 4px rgb(85, 107, 128);
     background-color: rgb(255, 255, 255);
-    transition: .9s;
+    transition: .3s;
 }
 .product_card:hover{
     background: linear-gradient(to right, #000013, #000654);
@@ -118,12 +118,12 @@ main{
 .choose_p{
     margin: 0;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #ff461b;
 }
-.product_card:hover .choose_p{
-    transform: scale(1.1);
-}
+// .product_card:hover .choose_p{
+//     transform: scale(1.1);
+// }
 .summary_button{
     background-color: grey;
 }
@@ -212,6 +212,9 @@ main{
         flex-direction: row;
         align-items: center;
         margin-top: 1rem;
+    }
+    .summary_button{
+        margin: 0;
     }
     // .products{
     // grid-template-columns: repeat(2, 1fr);
