@@ -21,24 +21,78 @@ main{
     backdrop-filter: blur(1rem);
     background-color: #ffffffab;
 }
-.price_button_wraper{
+
+:root {
+    --swiper-theme-color: $navy_blue !important;
+  }
+.swiper_button_price_wraper{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
+}
+.swiper{
+    height: 100%;
+    width: 65% !important;
+    margin-left: -1rem !important;
+    padding: 3rem 2rem 0 2rem !important;
+}
+.swiper-slide{
+    // margin-left: -2rem !important;
+    // margin-right: 5rem !important;
+
+    // width: 80% !important;
+    padding-bottom: .5rem !important;
+    border: 3px solid $navy_blue !important;
+    background-color: rgba(0, 0, 22, 0.329) !important;
+}
+.swiper-slide{
+    display: flex;
+}
+.swiper_img{
+    height: 12rem;
     margin-top: -3rem;
+    margin-left: -2rem;
+}
+.swiper_right_side_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.swiper_p{
+    width: 80%;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.swiper-pagination{
+    width: 105% !important;
+}
+.price_button_wraper{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.swiper_button_wrapper{
+    display: flex;
+    justify-content: end;
+    width: 80%;
 }
 .price_wraper{
+    margin: 3rem 0 2rem 0;
     padding: .5rem;
-    border-radius: 6px;
-    background-color: #7ea1b6;
-    color: white;
+    background-color: white;
+    color: $navy_blue;
+    border: 3px solid $navy_blue;
+}
+.quantity p{
+    white-space: nowrap;
 }
 .paras{
     display: flex;
 }
 .paras p{
     margin: 0 .25rem;
-    font-weight: 600;
 }
 .header{
     display: flex;
@@ -48,7 +102,7 @@ main{
     padding: 2rem;
 }
 .color{
-    color: $navy_blue;
+    color: #1823b9;
     font-weight: 900;
 }
 .products{
@@ -137,6 +191,12 @@ main{
 //     }
 // }
 @media (max-width: 1100px){
+    .header{
+        padding: 2rem 0;
+    }
+    .swiper_button_price_wraper{
+        width: 100%;
+    }
     .container_config{
         width: 90%;
     }
@@ -145,6 +205,12 @@ main{
     }
 }
 @media (max-width: 900px){
+    // .swiper_button_price_wraper{
+    //     flex-direction: column;
+    // }
+    .swiper-slide{
+        width: 100% !important;
+    }
     .products{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -157,7 +223,7 @@ main{
         align-items: flex-start;
     }
     .price_button_wraper{
-        width: 100%;
+        // width: 100%;
         flex-direction: column;
         align-items: flex-end;
         margin-top: -3rem;

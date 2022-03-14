@@ -48,8 +48,8 @@ nav {
 button {
   position: relative;
   z-index: 5;
-  padding: .6rem 1.5rem;
-  border-radius: 12px;
+  padding: .4rem 1.2rem;
+  border-radius: 4px;
   background: linear-gradient(to right, #000013, #000654);
   color: white;
   font-weight: 600;

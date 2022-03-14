@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hubballi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -41,20 +43,67 @@
     <main class="container_bg">
         <div class="container_config">
             <div class="header">
+
                 <h2>konfigurator</h2>
-                <div class="price_button_wraper">
-                    <div class="price_wraper">
-                        <div class="quantity paras">
-                            <p>Ilość produktów w koszyku: </p>
-                            <p class="color">1</p>
+
+                <!-- swiper -->
+
+                <div class="swiper_button_price_wraper">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="swiper_img" src="img/comp.png">
+                                <div class="swiper_right_side_wrapper">
+                                    <p class="swiper_p">Komputer GER-POL Rift, Core i7-3770, 16 GB, RTX 2060, 512 GB
+                                        SSD
+                                        Windows 10 Pro</p>
+                                    <div class="swiper_button_wrapper">
+                                        <button class="swiper_button">Zobacz</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="swiper_img" src="img/comp.png">
+                                <div class="swiper_right_side_wrapper">
+                                    <p class="swiper_p">Komputer GER-POL Rift, Core i7-3770, 16 GB, RTX 2060, 512 GB
+                                        SSD
+                                        Windows 10 Pro</p>
+                                    <div class="swiper_button_wrapper">
+                                        <button class="swiper_button">Zobacz</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="swiper_img" src="img/comp.png">
+                                <div class="swiper_right_side_wrapper">
+                                    <p class="swiper_p">Komputer GER-POL Rift, Core i7-3770, 16 GB, RTX 2060, 512 GB
+                                        SSD
+                                        Windows 10 Pro</p>
+                                    <div class="swiper_button_wrapper">
+                                        <button class="swiper_button">Zobacz</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="price paras">
-                            <p>Wartość koszyka: </p>
-                            <p class="color">2500zł</p>
-                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="summary_button_wraper">
-                        <button class="summary_button">Podsumowanie</button>
+
+                    <!-- /swiper -->
+
+                    <div class="price_button_wraper">
+                        <div class="price_wraper">
+                            <div class="quantity paras">
+                                <p>Ilość produktów w koszyku: </p>
+                                <p class="color">1</p>
+                            </div>
+                            <div class="price paras">
+                                <p>Wartość koszyka: </p>
+                                <p class="color">2500zł</p>
+                            </div>
+                        </div>
+                        <div class="summary_button_wraper">
+                            <button class="summary_button">Podsumowanie</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -127,6 +176,27 @@
     <!-- main component end -->
 
     <script type="text/javascript" src="konfigurator.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        let swiper = new Swiper(".swiper", {
+            slidesPerView: 1,
+            spaceBetween: 140,
+            autoplay: {
+                delay: 5000,
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+    </script>
 
 </body>
 
