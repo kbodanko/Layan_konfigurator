@@ -13,6 +13,7 @@ main {
 
 .container_config {
   width: 95%;
+  min-height: 90vh;
   padding: 1rem;
   border-top-right-radius: 9px;
   border-top-left-radius: 9px;
@@ -188,6 +189,15 @@ main {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.product_check_wraper {
+  display: flex;
+  align-items: center;
+}
+
+.product_check {
+  height: .9rem;
 }
 
 .is_required {
