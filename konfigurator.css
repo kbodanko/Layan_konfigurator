@@ -76,13 +76,14 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  width: 100%;
 }
 
 .swiper_p {
   width: 80%;
   color: white;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .swiper-pagination {
@@ -198,6 +199,7 @@ main {
 
 .product_check {
   height: .9rem;
+  margin-right: .5rem;
 }
 
 .is_required {
@@ -209,6 +211,7 @@ main {
   border-radius: 5px;
   padding: .1rem .5rem;
   font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .choose {
@@ -250,10 +253,13 @@ main {
     font-weight: 500;
   }
   .product_wraper, .choose, .choose_p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
   .paras p {
     font-size: 1.3rem;
+  }
+  .swiper_img {
+    height: 20rem;
   }
 }
 
@@ -265,11 +271,8 @@ main {
   .icons {
     height: 2.5rem;
   }
-  .swiper {
-    width: 55% !important;
-  }
   .swiper_p {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 }
 
