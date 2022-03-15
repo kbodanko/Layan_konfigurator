@@ -22,8 +22,23 @@ main{
     background-color: #ffffffab;
 }
 
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.h2_button_price_wraper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 :root {
     --swiper-theme-color: $navy_blue !important;
+    --swiper-navigation-color: $navy_blue !important;
+    --swiper-navigation-size: 30px !important;
   }
 .swiper_button_price_wraper{
     display: flex;
@@ -32,7 +47,7 @@ main{
 }
 .swiper{
     height: 100%;
-    width: 65% !important;
+    width: 97% !important;
     margin-left: -1rem !important;
     padding: 3rem 2rem 0 2rem !important;
 }
@@ -47,9 +62,10 @@ main{
 }
 .swiper-slide{
     display: flex;
+    justify-content: space-between;
 }
 .swiper_img{
-    height: 12rem;
+    height: 14rem;
     margin-top: -3rem;
     margin-left: -2rem;
 }
@@ -68,6 +84,19 @@ main{
 .swiper-pagination{
     width: 105% !important;
 }
+.swiper-button-next, .swiper-button-prev{
+    padding: .3rem;
+border-radius: 50%;
+border: 2px solid $navy_blue;
+background-color: white;
+width: 5%;
+width: 2rem !important;
+height: 2rem !important;
+right: 0px;
+}
+.swiper-button-prev{
+    margin-left: 1.5rem;
+}
 .price_button_wraper{
     display: flex;
     flex-direction: column;
@@ -76,10 +105,9 @@ main{
 .swiper_button_wrapper{
     display: flex;
     justify-content: end;
-    width: 80%;
+    width: 90%;
 }
 .price_wraper{
-    margin: 3rem 0 2rem 0;
     padding: .5rem;
     background-color: white;
     color: $navy_blue;
@@ -93,13 +121,6 @@ main{
 }
 .paras p{
     margin: 0 .25rem;
-}
-.header{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
 }
 .color{
     color: #1823b9;
@@ -196,13 +217,13 @@ main{
     }
 }
 @media (min-width: 1500px){
-    .header{
-        padding: 2rem 5rem;
-    }
     .swiper_p{
         width: 90%;
     }
-    .product_wraper, choose, .choose_p{
+.swiper_button, .summary_button{
+    font-weight: 500;
+}
+    .product_wraper, .choose, .choose_p{
         font-size: 1.4rem;
     }
     .paras p{
@@ -239,9 +260,12 @@ main{
     }
 }
 @media (max-width: 900px){
-    // .swiper_button_price_wraper{
-    //     flex-direction: column;
-    // }
+    .swiper_button_price_wraper{
+        flex-direction: column-reverse;
+    }
+    .swiper{
+        width: 90% !important;
+    }
     .swiper-slide{
         width: 100% !important;
     }
@@ -255,12 +279,15 @@ main{
     .header{
         flex-direction: column;
         align-items: flex-start;
+        padding: 0;
     }
-    .price_button_wraper{
-        // width: 100%;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-top: -3rem;
+    // .price_button_wraper{
+    //     flex-direction: column;
+    //     align-items: flex-end;
+    //     margin-top: -3rem;
+    // }
+    .price_wraper{
+        margin: 0;
     }
     .summary_button{
         margin-top: .5rem;
@@ -268,17 +295,14 @@ main{
 }
 @media (max-width: 700px){
     .container_config{
-        width: 85%;
         padding: 1rem;
     }
     .header{
         padding: 0;
     }
     .price_wraper{
-        padding: .3rem;
-    }
-    .price_button_wraper{
-        margin-top: -2rem;
+        padding: .2rem 0;
+        border: 2px solid $navy_blue;
     }
     .paras p{
         font-size: 0.8rem;
@@ -288,6 +312,18 @@ main{
         padding: .3rem .7rem;
         border-radius: 6px;
     } 
+    .swiper{
+        margin: 1.5rem;
+    }
+    .swiper p{
+        font-size: 1rem;
+    }
+    .swiper_button, .summary_button{
+        font-size: .7rem;
+    }
+    .swiper_img{
+        height: 10rem;
+    }
     .products{
         margin: 3rem 0;
     }
@@ -300,23 +336,24 @@ main{
     }
 }
 @media (max-width: 500px){
-    h2{
-        width: 100%;}
+    // h2{
+    //     width: 100%;
+    // }
     main {
         // min-height: 80vh;
         background-image: url(img/mobile_bg.png);
     }
     .container_config{
-        width: 85%;
+        width: 95%;
+        border-radius: 0;
     }
-    .price_button_wraper{
-        flex-direction: row;
-        align-items: center;
-        margin-top: 1rem;
-    }
-    .summary_button{
-        margin: 0;
-    }
+    // .price_button_wraper{
+    //     align-items: flex-end;
+    //     margin-top: 1rem;
+    // }
+    // .summary_button{
+    //     margin: 0;
+    // }
     // .products{
     // grid-template-columns: repeat(2, 1fr);
     // }
