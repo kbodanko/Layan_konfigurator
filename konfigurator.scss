@@ -1,10 +1,6 @@
 $navy_blue: rgb(0, 0, 22);
 $button_bg: linear-gradient(to right, #000013, #000654);
 
-body{
-    margin: 0;
-    padding: 0;
-}
 main{
     display: flex;
     justify-content: center;
@@ -190,7 +186,7 @@ right: 0px;
 }
 .is_required{
     position: absolute;
-    top: -.5rem;
+    top: -.9rem;
     margin: 0;
     background-color: #ff461b;;
     color: white;
@@ -218,6 +214,7 @@ right: 0px;
 //     transform: scale(1.1);
 // }
 .summary_button{
+    margin-top: .5rem;
     background-color: grey;
 }
 .summary_button:hover{
@@ -270,11 +267,23 @@ right: 0px;
     .swiper_button_price_wraper{
         width: 100%;
     }
+    .swiper_p{
+        width: 90%;
+        font-size: 1.5rem;
+    }
     .container_config{
         width: 90%;
     }
     .product_card{
         padding: .5rem 1rem;
+    }
+    
+    .is_required{
+        top: -.7rem;
+        font-size: .8rem;
+    }
+    .product_check{
+        height: .6rem;
     }
 }
 @media (max-width: 900px){
@@ -309,9 +318,6 @@ right: 0px;
     }
     .summary_button{
         margin-top: .5rem;
-    }
-    .is_required{
-        font-size: .8rem;
     }
 @media (max-width: 700px){
     .container_config{
@@ -377,5 +383,5 @@ right: 0px;
     // .products{
     // grid-template-columns: repeat(2, 1fr);
     // }
-    }
+    }}
     

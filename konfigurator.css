@@ -204,7 +204,7 @@ main {
 
 .is_required {
   position: absolute;
-  top: -.5rem;
+  top: -.9rem;
   margin: 0;
   background-color: #ff461b;
   color: white;
@@ -232,6 +232,7 @@ main {
 }
 
 .summary_button {
+  margin-top: .5rem;
   background-color: grey;
 }
 
@@ -283,11 +284,22 @@ main {
   .swiper_button_price_wraper {
     width: 100%;
   }
+  .swiper_p {
+    width: 90%;
+    font-size: 1.5rem;
+  }
   .container_config {
     width: 90%;
   }
   .product_card {
     padding: .5rem 1rem;
+  }
+  .is_required {
+    top: -.7rem;
+    font-size: .8rem;
+  }
+  .product_check {
+    height: .6rem;
   }
 }
 
@@ -321,7 +333,7 @@ main {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) and (max-width: 700px) {
   .container_config {
     padding: 1rem;
   }
@@ -364,7 +376,7 @@ main {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) and (max-width: 500px) {
   main {
     background-image: url(img/mobile_bg.png);
   }
