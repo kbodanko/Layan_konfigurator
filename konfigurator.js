@@ -21,7 +21,7 @@ function showMenu() {
 }
 function hideMenu() {
     console.log('kk');
-    menu.style.transform = 'translateY(-100vh)';
+    menu.style.transform = 'translateY(-130vh)';
     main.style.filter = 'blur(0)';
     nav.style.filter = 'blur(0)';
 }

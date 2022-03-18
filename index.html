@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> -->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hubballi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -20,11 +24,21 @@
     <div class="menu">
         <div class="menu_close_wraper"><img class="icons" id="close" src="img/close2.png"></div>
         <div class="menu_options_wraper">
-            <div class="menu_option">Home</div>
-            <div class="menu_option">Konfigurator</div>
-            <div class="menu_option">Budowa komputera</div>
-            <div class="menu_option">O nas</div>
-            <div class="menu_option">Kontakt</div>
+            <div class="menu_option">
+                <p>Home</p>
+            </div>
+            <div class="menu_option">
+                <p>Konfigurator</p>
+            </div>
+            <div class="menu_option">
+                <p>Budowa komputera</p>
+            </div>
+            <div class="menu_option">
+                <p>O nas</p>
+            </div>
+            <div class="menu_option">
+                <p>Kontakt</p>
+            </div>
         </div>
     </div>
     <nav>
@@ -109,71 +123,307 @@
 
 
             </div>
-            <div class="products">
-                <div class="product_card product_required">
-                    <p class="is_required">Wymagane</p>
-                    <div class="product_wraper">
-                        <div class="product_check_wraper">
-                            <img class="product_check" src="img/ok.png">
-                            <p class="choose">Procesory</p>
+            <div class="config_content">
+                <div class="products">
+                    <div class="product_card product_required">
+                        <p class="is_required">Wymagane</p>
+                        <div class="product_wraper">
+                            <div class="product_check_wraper">
+                                <i class="fa-solid fa-check"></i>
+                                <p class="choose">Procesory</p>
+                            </div>
+                            <p class="choose_p">Zmień</p>
                         </div>
-                        <p class="choose_p">Wybierz</p>
+                    </div>
+                    <div class="product_card">
+                        <!-- <p class="is_required">Wymagane</p> -->
+                        <div class="product_wraper">
+                            <p class="choose">Procesory</p>
+                            <p class="choose_p">Wybierz</p>
+                        </div>
+                    </div>
+                    <div class="product_card">
+                        <!-- <p class="is_required">Wymagane</p> -->
+                        <div class="product_wraper">
+                            <p class="choose">Procesory</p>
+                            <p class="choose_p">Wybierz</p>
+                        </div>
+                    </div>
+                    <div class="product_card">
+                        <!-- <p class="is_required">Wymagane</p> -->
+                        <div class="product_wraper">
+                            <p class="choose">Procesory</p>
+                            <p class="choose_p">Wybierz</p>
+                        </div>
+                    </div>
+                    <div class="product_card">
+                        <!-- <p class="is_required">Wymagane</p> -->
+                        <div class="product_wraper">
+                            <p class="choose">Procesory</p>
+                            <p class="choose_p">Wybierz</p>
+                        </div>
+                    </div>
+                    <div class="product_card">
+                        <!-- <p class="is_required">Wymagane</p> -->
+                        <div class="product_wraper">
+                            <p class="choose">Procesory</p>
+                            <p class="choose_p">Wybierz</p>
+                        </div>
+                    </div>
+                    <div class="product_card">
+                        <!-- <p class="is_required">Wymagane</p> -->
+                        <div class="product_wraper">
+                            <p class="choose">Procesory</p>
+                            <p class="choose_p">Wybierz</p>
+                        </div>
+                    </div>
+                    <div class="product_card">
+                        <!-- <p class="is_required">Wymagane</p> -->
+                        <div class="product_wraper">
+                            <p class="choose">Procesory</p>
+                            <p class="choose_p">Wybierz</p>
+                        </div>
                     </div>
                 </div>
-                <div class="product_card">
-                    <!-- <p class="is_required">Wymagane</p> -->
-                    <div class="product_wraper">
-                        <p class="choose">Procesory</p>
-                        <p class="choose_p">Wybierz</p>
+
+                <div class="choosed_products_content">
+                    <div class="choosed_products_filters_wrapper">
+                        <div class="choosed_products_filters_header">
+                            <img class="choosed_products_filters_icon" src="img/filters_icon.png">
+                            <p class="choosed_products_filters_header_p">Filtry</p>
+                        </div>
+                        <div class="filters_products_wrapper">
+                            <ul class="filters">
+                                <li>Filtry</li>
+                                <li>Filtry</li>
+                                <li>Filtry</li>
+                                <li>Filtry</li>
+                                <li>Filtry</li>
+
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="product_card">
-                    <!-- <p class="is_required">Wymagane</p> -->
-                    <div class="product_wraper">
-                        <p class="choose">Procesory</p>
-                        <p class="choose_p">Wybierz</p>
+                    <!-- <div class="choosed_products_products"> -->
+                    <div class="choosed_products_card">
+                        <div class="choosed_products_left_wrapper">
+                            <img class="products_img" src="img/processor.png">
+                            <div class="choosed_products_icons">
+                                <img class="icons" src="">
+                                <img class="icons" src="">
+                            </div>
+                        </div>
+                        <div class="choosed_products_right_wrapper">
+                            <div class="rating">
+                                <img class="rating_icon" src="img/fill_gear.png">
+                                <img class="rating_icon" src="img/fill_gear.png">
+                                <img class="rating_icon" src="img/empty_gear.png">
+                                <img class="rating_icon" src="img/empty_gear.png">
+                                <img class="rating_icon" src="img/empty_gear.png">
+                            </div>
+                            <p class="choosed_products_header">PROCESOR INTEL I5-8500</p>
+                            <div class="choosed_products_parameters">
+                                <p class="choosed_products_parameters_name">CPU</p>
+                                <p class="choosed_products_parameters_value">2600 MHz</p>
+                            </div>
+                            <div class="choosed_products_parameters">
+                                <p class="choosed_products_parameters_name">CPU</p>
+                                <p class="choosed_products_parameters_value">2600 MHz</p>
+                            </div>
+                            <div class="choosed_products_parameters">
+                                <p class="choosed_products_parameters_name">CPU</p>
+                                <p class="choosed_products_parameters_value">2600 MHz</p>
+                            </div>
+                            <div class="choosed_products_parameters">
+                                <p class="choosed_products_parameters_name">CPU</p>
+                                <p class="choosed_products_parameters_value">2600 MHz</p>
+                            </div>
+                            <div class="choosed_products_icon">
+                                <div class="choosed_products_icon_bg">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="product_card">
-                    <!-- <p class="is_required">Wymagane</p> -->
-                    <div class="product_wraper">
-                        <p class="choose">Procesory</p>
-                        <p class="choose_p">Wybierz</p>
+
+                    <div class="choosed_products_card">
+                        <div class="choosed_products_left_wrapper">
+                            <img class="products_img" src="img/processor.png">
+                            <div class="choosed_products_icons">
+                                <img class="icons" src="">
+                                <img class="icons" src="">
+                            </div>
+                        </div>
+                        <div class="choosed_products_right_wrapper">
+                            <div class="rating">
+                                <img class="rating_icon" src="img/fill_gear.png">
+                                <img class="rating_icon" src="img/fill_gear.png">
+                                <img class="rating_icon" src="img/empty_gear.png">
+                                <img class="rating_icon" src="img/empty_gear.png">
+                                <img class="rating_icon" src="img/empty_gear.png">
+                            </div>
+                            <p class="choosed_products_header">PROCESOR INTEL I5-8500</p>
+                            <div class="choosed_products_parameters">
+                                <p class="choosed_products_parameters_name">CPU</p>
+                                <p class="choosed_products_parameters_value">2600 MHz</p>
+                            </div>
+                            <div class="choosed_products_parameters">
+                                <p class="choosed_products_parameters_name">CPU</p>
+                                <p class="choosed_products_parameters_value">2600 MHz</p>
+                            </div>
+                            <div class="choosed_products_parameters">
+                                <p class="choosed_products_parameters_name">CPU</p>
+                                <p class="choosed_products_parameters_value">2600 MHz</p>
+                            </div>
+                            <div class="choosed_products_parameters">
+                                <p class="choosed_products_parameters_name">CPU</p>
+                                <p class="choosed_products_parameters_value">2600 MHz</p>
+                            </div>
+                            <div class="choosed_products_icon">
+                                <div class="choosed_products_icon_bg">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="product_card">
-                    <!-- <p class="is_required">Wymagane</p> -->
-                    <div class="product_wraper">
-                        <p class="choose">Procesory</p>
-                        <p class="choose_p">Wybierz</p>
+
+                    <div class="choosed_products_card">
+                        <div class="choosed_products_left_wrapper">
+                            <img class="products_img" src="img/processor.png">
+                            <div class="choosed_products_icons">
+                                <img class="icons" src="">
+                                <img class="icons" src="">
+                            </div>
+                        </div>
+                        <div class="choosed_products_right_wrapper">
+                            <div class="rating">
+                                <img class="rating_icon" src="img/fill_gear.png">
+                                <img class="rating_icon" src="img/fill_gear.png">
+                                <img class="rating_icon" src="img/empty_gear.png">
+                                <img class="rating_icon" src="img/empty_gear.png">
+                                <img class="rating_icon" src="img/empty_gear.png">
+                            </div>
+                            <p class="choosed_products_header">PROCESOR INTEL I5-8500</p>
+                            <div class="choosed_products_parameters">
+                                <p class="choosed_products_parameters_name">CPU</p>
+                                <p class="choosed_products_parameters_value">2600 MHz</p>
+                            </div>
+                            <div class="choosed_products_parameters">
+                                <p class="choosed_products_parameters_name">CPU</p>
+                                <p class="choosed_products_parameters_value">2600 MHz</p>
+                            </div>
+                            <div class="choosed_products_parameters">
+                                <p class="choosed_products_parameters_name">CPU</p>
+                                <p class="choosed_products_parameters_value">2600 MHz</p>
+                            </div>
+                            <div class="choosed_products_parameters">
+                                <p class="choosed_products_parameters_name">CPU</p>
+                                <p class="choosed_products_parameters_value">2600 MHz</p>
+                            </div>
+                            <div class="choosed_products_icon">
+                                <div class="choosed_products_icon_bg">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="product_card">
-                    <!-- <p class="is_required">Wymagane</p> -->
-                    <div class="product_wraper">
-                        <p class="choose">Procesory</p>
-                        <p class="choose_p">Wybierz</p>
+
+                    <div class="choosed_products_card">
+                        <div class="choosed_products_left_wrapper">
+                            <img class="products_img" src="img/processor.png">
+                            <div class="choosed_products_icons">
+                                <img class="icons" src="">
+                                <img class="icons" src="">
+                            </div>
+                        </div>
+                        <div class="choosed_products_right_wrapper">
+                            <div class="rating">
+                                <img class="rating_icon" src="img/fill_gear.png">
+                                <img class="rating_icon" src="img/fill_gear.png">
+                                <img class="rating_icon" src="img/empty_gear.png">
+                                <img class="rating_icon" src="img/empty_gear.png">
+                                <img class="rating_icon" src="img/empty_gear.png">
+                            </div>
+                            <p class="choosed_products_header">PROCESOR INTEL I5-8500</p>
+                            <div class="choosed_products_parameters">
+                                <p class="choosed_products_parameters_name">CPU</p>
+                                <p class="choosed_products_parameters_value">2600 MHz</p>
+                            </div>
+                            <div class="choosed_products_parameters">
+                                <p class="choosed_products_parameters_name">CPU</p>
+                                <p class="choosed_products_parameters_value">2600 MHz</p>
+                            </div>
+                            <div class="choosed_products_parameters">
+                                <p class="choosed_products_parameters_name">CPU</p>
+                                <p class="choosed_products_parameters_value">2600 MHz</p>
+                            </div>
+                            <div class="choosed_products_parameters">
+                                <p class="choosed_products_parameters_name">CPU</p>
+                                <p class="choosed_products_parameters_value">2600 MHz</p>
+                            </div>
+                            <div class="choosed_products_icon">
+                                <div class="choosed_products_icon_bg">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="product_card">
-                    <!-- <p class="is_required">Wymagane</p> -->
-                    <div class="product_wraper">
-                        <p class="choose">Procesory</p>
-                        <p class="choose_p">Wybierz</p>
+
+                    <div class="choosed_products_card">
+                        <div class="choosed_products_left_wrapper">
+                            <img class="products_img" src="img/processor.png">
+                            <div class="choosed_products_icons">
+                                <img class="icons" src="">
+                                <img class="icons" src="">
+                            </div>
+                        </div>
+                        <div class="choosed_products_right_wrapper">
+                            <div class="rating">
+                                <img class="rating_icon" src="img/fill_gear.png">
+                                <img class="rating_icon" src="img/fill_gear.png">
+                                <img class="rating_icon" src="img/empty_gear.png">
+                                <img class="rating_icon" src="img/empty_gear.png">
+                                <img class="rating_icon" src="img/empty_gear.png">
+                            </div>
+                            <p class="choosed_products_header">PROCESOR INTEL I5-8500</p>
+                            <div class="choosed_products_parameters">
+                                <p class="choosed_products_parameters_name">CPU</p>
+                                <p class="choosed_products_parameters_value">2600 MHz</p>
+                            </div>
+                            <div class="choosed_products_parameters">
+                                <p class="choosed_products_parameters_name">CPU</p>
+                                <p class="choosed_products_parameters_value">2600 MHz</p>
+                            </div>
+                            <div class="choosed_products_parameters">
+                                <p class="choosed_products_parameters_name">CPU</p>
+                                <p class="choosed_products_parameters_value">2600 MHz</p>
+                            </div>
+                            <div class="choosed_products_parameters">
+                                <p class="choosed_products_parameters_name">CPU</p>
+                                <p class="choosed_products_parameters_value">2600 MHz</p>
+                            </div>
+                            <div class="choosed_products_icon">
+                                <div class="choosed_products_icon_bg">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+
+
+                    <!-- </div> -->
                 </div>
-                <div class="product_card">
-                    <!-- <p class="is_required">Wymagane</p> -->
-                    <div class="product_wraper">
-                        <p class="choose">Procesory</p>
-                        <p class="choose_p">Wybierz</p>
-                    </div>
-                </div>
+
+
             </div>
+        </div>
         </div>
 
 
     </main>
+
+
+
     <footer>
         <p class="footer_p">Design i grafika - <a href="https://github.com/kbodanko">kbodanko</a> | Projekt i aplikacja
             - Layan @copywrite LAYAN 2022</p>
@@ -187,9 +437,9 @@
         let swiper = new Swiper(".swiper", {
             slidesPerView: 1,
             spaceBetween: 140,
-            // autoplay: {
-            //     delay: 5000,
-            // },
+            autoplay: {
+                delay: 5000,
+            },
             loop: true,
             pagination: {
                 el: ".swiper-pagination",

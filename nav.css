@@ -25,11 +25,13 @@
 }
 
 html {
+  overflow: hidden;
   margin: 0;
   padding: 0;
 }
 
 body {
+  overflow: hidden;
   margin: 0;
   padding: 0;
   font-family: 'Hubballi', cursive;
@@ -82,7 +84,7 @@ h2 {
 }
 
 .menu {
-  transform: translateY(-100vh);
+  transform: translateY(-130vh);
   position: fixed;
   z-index: 4;
   display: flex;
@@ -106,8 +108,12 @@ h2 {
 .menu_option {
   width: 100%;
   margin: 1rem;
-  cursor: pointer;
   text-align: center;
+}
+
+.menu_option:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .menu_close_wraper {
