@@ -1,7 +1,6 @@
 main {
   display: flex;
   justify-content: center;
-  min-height: 90vh;
   overflow: hidden;
   background-image: url("img/bg.png");
   margin-top: -3.8rem;
@@ -17,7 +16,6 @@ i {
 
 .container_config {
   width: 95%;
-  min-height: 90vh;
   padding: 1rem;
   border-top-right-radius: 9px;
   border-top-left-radius: 9px;
