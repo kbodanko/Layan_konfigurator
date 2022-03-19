@@ -26,7 +26,7 @@ dropDownFilters = function () {
     isDropDown = !isDropDown;
 };
 
-filtersHeader.addEventListener('click', dropDownFilters);
+// filtersHeader.addEventListener('click', dropDownFilters);
 for (let i = 0; i < menuOptions.length; i++) {
     const element = menuOptions[i];
     element.setAttribute('id', 'menuOption' + [i]);
