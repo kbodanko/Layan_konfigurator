@@ -235,11 +235,14 @@ right: 0px;
     color: $navy_blue;
     font-size: 1.5rem;
     box-shadow: 1px 1px 5px $navy_blue;
+    background-color: white;
 }
 .filters_products_wrapper{
     margin: 1rem 0;
 }
 .choosed_products_filters_header{
+    position: relative;
+    z-index: 2;
     display: flex;
     align-items: center;
     padding: 0 2rem;
@@ -260,6 +263,11 @@ right: 0px;
     // border: 1px solid $navy_blue_tr;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    transition: .3s;
+    // transition: all 4s ease-out;
+    // transition-property: height, transform;
+    // transition-delay: .5s, .3s;
 }
 li{
     padding: 1rem 2rem ;
@@ -327,7 +335,11 @@ li:hover{
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
+    border: 2px solid $coral;
     // background-color: white;
+}
+.choosed_products_icon_bg:active{
+    transform: scale(.9);
 }
 .choosed_products_icon_bg:hover{
     background-color: $coral;
@@ -517,32 +529,57 @@ li:hover{
         grid-auto-rows: auto;
     }
     .choosed_products_filters_wrapper{
+        flex-direction: column;
         grid-area: 1/1/2/3;
     }
-    .filters_products_wrapper{
-        display: none;
+    .choosed_products_filters_header{
+        cursor: pointer;
     }
 }
 
 @media (max-width: 500px){
     // h2{
-    //     width: 100%;
-    // }
-    main {
-        // min-height: 80vh;
-        background-image: url(img/mobile_bg.png);
-    }
-    .container_config{
-        width: 95%;
-        border-radius: 0;
-    }
-    .swiper{
-        padding: 3rem 2rem 0 1.5rem !important;
-    }
-    .choose, .choose_p{
-        font-size: 1rem;
-    }
-    // .price_button_wraper{
+        //     width: 100%;
+        // }
+        main {
+            // min-height: 80vh;
+            background-image: url(img/mobile_bg.png);
+        }
+        .container_config{
+            width: 100%;
+            border-radius: 0;
+        }
+        .header{
+            margin: 0 .7rem;
+            align-items: center;
+        }
+        .swiper{
+            padding: 3rem 2rem 0 1.5rem !important;
+            width: 90% !important;
+        }
+        .choose, .choose_p{
+            font-size: 1rem;
+        }
+        .products{
+            margin: 3rem .7rem;
+        }
+        .filters_products_wrapper{
+            margin: 0;
+        }
+        .filters{
+            max-height: 1rem;
+            margin-top: -1rem;
+            // transform: translateY(-2.5rem);
+        }
+        .choosed_products_filters_wrapper:hover .filters_products_wrapper{
+            margin: 1rem 0;
+        }
+        .choosed_products_filters_wrapper:hover .filters{
+            max-height: 20rem;
+            margin-top: 0;
+            // transform: translateY(0);
+        }
+        // .price_button_wraper{
     //     align-items: flex-end;
     //     margin-top: 1rem;
     // }
