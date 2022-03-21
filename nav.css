@@ -41,6 +41,7 @@ nav {
   z-index: 3;
   display: flex;
   justify-content: space-between;
+  width: 92vw;
   padding: 1rem;
   transition: .3s;
 }
@@ -144,11 +145,14 @@ h2 {
   margin-right: .5rem;
 }
 
-.footer_p {
-  width: 100%;
-  margin: 0;
+footer {
+  margin-top: 30rem;
   background-color: #000016;
   color: white;
+}
+
+.footer_p {
+  margin: 0;
   font-size: 1rem;
   text-align: end;
   padding-right: .5rem;

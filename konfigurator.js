@@ -9,6 +9,39 @@ let filtersWrapper = document.querySelector('.filters_products_wrapper');
 let filtersHeader = document.querySelector('.choosed_products_filters_header');
 let filtersBody = document.querySelector('.filters');
 let isDropDown = false;
+let productCards = document.querySelectorAll('.product_card');
+
+for (let i = 0; i < productCards.length; i++) {
+    const productCard = productCards[i];
+    productCard.addEventListener('click', showProductsOptions);
+
+}
+let products = document.querySelector('.products');
+let choosedProducts = document.querySelector('.choosed_products_content');
+
+function showProductsOptions() {
+    console.log('slide');
+    products.style.transform = 'translate(-100vw)';
+    main.style.maxHeight = 'auto';
+    choosedProducts.style.display = 'grid';
+    choosedProducts.style.transform = 'translate(0)';
+    // products.style.display = 'none';
+    document.querySelector('.swiper').style.display = 'none';
+}
+document.querySelector('.fa-angles-left').addEventListener('click', showProducts);
+function showProducts() {
+    console.log('slide');
+    products.style.transform = 'translate(0)';
+    main.style.maxHeight = '120vh';
+    choosedProducts.style.transform = 'translate(100vw)';
+    // choosedProducts.style.display = 'none';
+    products.style.display = 'grid';
+    document.querySelector('.swiper').style.display = 'flex';
+
+
+}
+
+
 
 dropDownFilters = function () {
     if (isDropDown === false) {
