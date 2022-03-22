@@ -10,6 +10,7 @@ let filtersHeader = document.querySelector('.choosed_products_filters_header');
 let filtersBody = document.querySelector('.filters');
 let isDropDown = false;
 let productCards = document.querySelectorAll('.product_card');
+let backIcon = document.querySelector('.back_icon_wrapper');
 
 for (let i = 0; i < productCards.length; i++) {
     const productCard = productCards[i];
@@ -17,18 +18,19 @@ for (let i = 0; i < productCards.length; i++) {
 
 }
 let products = document.querySelector('.products');
-let choosedProducts = document.querySelector('.choosed_products_content');
+let choosedProducts = document.querySelector('.choosed_products_wrapper');
 
 function showProductsOptions() {
     console.log('slide');
     products.style.transform = 'translate(-100vw)';
     main.style.maxHeight = 'auto';
-    choosedProducts.style.display = 'grid';
+    choosedProducts.style.display = 'flex';
     choosedProducts.style.transform = 'translate(0)';
     // products.style.display = 'none';
-    document.querySelector('.swiper').style.display = 'none';
+    // document.querySelector('.swiper').style.display = 'none';
+    backIcon.style.display = 'flex';
 }
-document.querySelector('.fa-angles-left').addEventListener('click', showProducts);
+backIcon.addEventListener('click', showProducts);
 function showProducts() {
     console.log('slide');
     products.style.transform = 'translate(0)';
@@ -36,7 +38,8 @@ function showProducts() {
     choosedProducts.style.transform = 'translate(100vw)';
     // choosedProducts.style.display = 'none';
     products.style.display = 'grid';
-    document.querySelector('.swiper').style.display = 'flex';
+    // document.querySelector('.swiper').style.display = 'flex';
+    backIcon.style.display = 'none';
 
 
 }

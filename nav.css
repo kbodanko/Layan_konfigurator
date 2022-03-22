@@ -85,9 +85,10 @@ h2 {
 .menu {
   transform: translateY(-130vh);
   position: fixed;
-  z-index: 4;
+  z-index: 6;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 2, 0.9);
@@ -101,12 +102,11 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  margin-bottom: 2rem;
 }
 
 .menu_option {
   width: 100%;
-  margin: 1rem;
   text-align: center;
 }
 
@@ -146,6 +146,9 @@ h2 {
 }
 
 footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
   margin-top: 30rem;
   background-color: #000016;
   color: white;
@@ -166,13 +169,7 @@ footer {
 
 @media (min-width: 1500px) {
   button {
-    font-size: 1.8rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .menu_options_wraper {
-    font-size: 3rem;
+    font-size: 1.3rem;
   }
 }
 
