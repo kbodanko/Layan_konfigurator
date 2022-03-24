@@ -23,23 +23,23 @@ let choosedProducts = document.querySelector('.choosed_products_wrapper');
 function showProductsOptions() {
     console.log('slide');
     products.style.transform = 'translate(-100vw)';
-    main.style.maxHeight = 'auto';
-    choosedProducts.style.display = 'flex';
+    main.style.minHeight = '100vh';
+    backIcon.style.visibility = 'visible';
     choosedProducts.style.transform = 'translate(0)';
     // products.style.display = 'none';
     // document.querySelector('.swiper').style.display = 'none';
-    backIcon.style.display = 'flex';
+    choosedProducts.style.display = 'flex';
 }
 backIcon.addEventListener('click', showProducts);
 function showProducts() {
     console.log('slide');
     products.style.transform = 'translate(0)';
-    main.style.maxHeight = '120vh';
+    main.style.maxHeight = '100vh';
     choosedProducts.style.transform = 'translate(100vw)';
     // choosedProducts.style.display = 'none';
     products.style.display = 'grid';
     // document.querySelector('.swiper').style.display = 'flex';
-    backIcon.style.display = 'none';
+    backIcon.style.visibility = 'hidden';
 
 
 }
