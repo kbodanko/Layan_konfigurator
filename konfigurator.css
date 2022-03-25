@@ -42,7 +42,6 @@ i {
   width: 95vw;
   padding-top: 3rem;
   padding-bottom: 5rem;
-  backdrop-filter: blur(1rem);
 }
 
 .header {
