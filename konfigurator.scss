@@ -11,7 +11,7 @@ main{
     justify-content: center;
     width: 95vw;
     margin-top: -50rem;
-    // min-height: 90vh;
+    min-height: 90vh;
     overflow: hidden;
     // min-height: 120vh;
     // margin-top: -3.8rem;
@@ -87,10 +87,10 @@ i{
     transition: .3s;
 }
 .back_icon_wrapper p{
-    margin: .5rem 0;
+    margin: 0;
 }
-.fa-angles-left{margin-top: .5rem;
-    margin-right: .5rem;
+.fa-angles-left{
+    margin: .4rem .5rem 0 0;
     }
 
 :root {
@@ -113,7 +113,7 @@ i{
     // width: 90% !important;
     margin: 2rem 0 2rem -1rem !important;
     // margin-left: -1rem !important;
-    padding: 3rem 2rem 0 2rem !important;
+    padding: 3rem 0 0 2rem !important;
     cursor: pointer;
     transition: .5s;
 }
@@ -306,6 +306,7 @@ right: 0px;
     display: flex;
     // display: none;
     width: 95%;
+    margin-top: 2rem;
     transition: .5s;
 }
 .choosed_products_filters_wrapper{
@@ -579,12 +580,16 @@ li:hover{
     }
 }
 @media (max-width: 700px){
-    .container_config{
+    .header, .container_config{
         padding: 1rem;
     }
+    
     // .header{
     //     padding: 0;
     // }
+    .back_p_wrapper h2{
+        margin-top: 4rem;
+    }
     .price_wraper{
         padding: .2rem;
         // border: 2px solid $navy_blue;
@@ -631,6 +636,12 @@ li:hover{
     }
 }
 @media (max-width: 600px){
+    main{
+        min-height: 130vh;
+    }
+    .swiper{
+        margin: 0 !important;
+    }
     .choosed_products_content{
         grid-auto-rows: auto;
     }
@@ -647,6 +658,16 @@ li:hover{
 }
 
 @media (max-width: 500px){
+    .header{
+        padding: 0;
+    }
+    .h2_button_price_wraper{
+        flex-direction: column-reverse;
+        padding: 1rem 1rem 0 0;
+    }
+    .back_p_wrapper h2{
+        margin: 2rem 0 0 2rem;
+    }
     .choosed_products_content{
         margin: 2rem 0;
     }
@@ -660,15 +681,18 @@ li:hover{
         .container_config{
             width: 100%;
             border-radius: 0;
-            padding: 3rem 1rem 5rem 0;
+            padding: 3rem 2rem 5rem 0;
         }
         .header{
             margin: 0 .7rem;
             align-items: center;
         }
         .swiper{
-            padding: 3rem 2rem 0 1.5rem !important;
+            padding: 3rem 1rem 0 1.5rem !important;
             width: 90% !important;
+        }
+        .swiper_img{
+            height: 8rem;
         }
         .choose, .choose_p{
             font-size: 1rem;
@@ -728,6 +752,9 @@ li:hover{
     // }
     }
     @media (max-width: 450px){
+        .swiper p{
+            font-size: .9rem;
+        }
         .choosed_products_content{
             grid-template-columns: 1fr;
         }
@@ -736,4 +763,4 @@ li:hover{
             grid-area: 1/1/2/2;
         }
     }
-    
+   

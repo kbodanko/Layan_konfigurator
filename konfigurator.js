@@ -23,7 +23,7 @@ let choosedProducts = document.querySelector('.choosed_products_wrapper');
 function showProductsOptions() {
     console.log('slide');
     products.style.transform = 'translate(-100vw)';
-    main.style.minHeight = '100vh';
+    // main.style.minHeight = '100vh';
     backIcon.style.visibility = 'visible';
     choosedProducts.style.transform = 'translate(0)';
     // products.style.display = 'none';
@@ -34,7 +34,7 @@ backIcon.addEventListener('click', showProducts);
 function showProducts() {
     console.log('slide');
     products.style.transform = 'translate(0)';
-    main.style.maxHeight = '100vh';
+    // main.style.maxHeight = '100vh';
     choosedProducts.style.transform = 'translate(100vw)';
     // choosedProducts.style.display = 'none';
     products.style.display = 'grid';
