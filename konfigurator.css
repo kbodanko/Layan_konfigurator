@@ -6,7 +6,6 @@ main {
   justify-content: center;
   width: 95vw;
   margin-top: -50rem;
-  min-height: 90vh;
   overflow: hidden;
 }
 
@@ -25,7 +24,7 @@ i {
 }
 
 .container_background {
-  overflow: visible;
+  overflow-y: visible !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -230,13 +229,9 @@ i {
 }
 
 .product_card:hover {
-  background: linear-gradient(to right, #000013, #000654);
   backdrop-filter: blur(1rem);
   cursor: pointer;
-}
-
-.product_card:hover .choose {
-  color: white;
+  transform: scale(1.1);
 }
 
 .product_required {
@@ -630,9 +625,6 @@ li:hover {
 }
 
 @media (max-width: 900px) and (max-width: 600px) {
-  main {
-    min-height: 130vh;
-  }
   .swiper {
     margin: 0 !important;
   }
@@ -657,10 +649,13 @@ li:hover {
   }
   .h2_button_price_wraper {
     flex-direction: column-reverse;
-    padding: 1rem 1rem 0 0;
+    padding: .5rem 1rem 0 0;
+  }
+  .back_p_wrapper {
+    margin: 2rem 0 2rem 2rem;
   }
   .back_p_wrapper h2 {
-    margin: 2rem 0 0 2rem;
+    margin-top: 2rem;
   }
   .choosed_products_content {
     margin: 2rem 0;
