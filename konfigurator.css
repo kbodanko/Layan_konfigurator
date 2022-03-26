@@ -64,7 +64,7 @@ i {
   padding: 0 4rem;
 }
 
-.h2_button_price_wraper {
+.h2_button_price_wrapper {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -98,7 +98,7 @@ i {
   width: 100%;
 }
 
-.swiper_button_price_wraper {
+.swiper_button_price_wrapper {
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -160,7 +160,7 @@ i {
   margin-left: 1.5rem;
 }
 
-.price_button_wraper {
+.price_button_wrapper {
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -172,12 +172,13 @@ i {
   width: 90%;
 }
 
-.price_wraper {
+.price_wrapper {
   display: flex;
   align-items: center;
   padding: .5rem;
   background-color: white;
   color: #000016;
+  cursor: pointer;
 }
 
 .price_cart::before {
@@ -248,13 +249,13 @@ i {
   font-weight: 700;
 }
 
-.product_wraper {
+.product_wrapper {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.product_check_wraper {
+.product_check_wrapper {
   display: flex;
   align-items: center;
 }
@@ -462,6 +463,12 @@ li:hover {
   margin-top: -2rem;
 }
 
+.summary_basket {
+  position: absolute;
+  transform: translate(200vw);
+  transition: .5s;
+}
+
 @media (min-width: 1500px) {
   .swiper_p {
     width: 90%;
@@ -469,7 +476,7 @@ li:hover {
   .swiper_button, .summary_button {
     font-weight: 500;
   }
-  .product_wraper, .choose, .choose_p {
+  .product_wrapper, .choose, .choose_p {
     font-size: 1.3rem;
   }
   .price_cart::before {
@@ -503,7 +510,7 @@ li:hover {
   .swiper-slide {
     width: 100% !important;
   }
-  .swiper_button_price_wraper {
+  .swiper_button_price_wrapper {
     width: 100%;
   }
   .swiper_p {
@@ -533,7 +540,7 @@ li:hover {
 }
 
 @media (max-width: 900px) {
-  .swiper_button_price_wraper {
+  .swiper_button_price_wrapper {
     flex-direction: column-reverse;
   }
   .products {
@@ -548,7 +555,7 @@ li:hover {
     flex-direction: column;
     align-items: flex-start;
   }
-  .price_wraper {
+  .price_wrapper {
     margin: 0;
   }
   .summary_button {
@@ -587,7 +594,7 @@ li:hover {
   .back_p_wrapper h2 {
     margin-top: 4rem;
   }
-  .price_wraper {
+  .price_wrapper {
     padding: .2rem;
   }
   .price_cart::before {
@@ -646,7 +653,7 @@ li:hover {
   .header {
     padding: 0;
   }
-  .h2_button_price_wraper {
+  .h2_button_price_wrapper {
     flex-direction: column-reverse;
     padding: .5rem 1rem 0 0;
   }
