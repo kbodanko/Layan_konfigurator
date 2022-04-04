@@ -506,11 +506,9 @@ li:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 1rem;
+  margin-left: .5rem;
   height: 1.5rem;
   width: 1.5rem;
-  border-radius: 50%;
-  border: 2px solid white;
 }
 
 .choosed_products_add_button {
@@ -582,7 +580,6 @@ li:hover {
     height: 20rem;
   }
   .fa-plus {
-    border: 3px solid #ff461b;
     height: 2rem;
     width: 2rem;
   }
@@ -747,7 +744,6 @@ li:hover {
     padding: .2rem;
   }
   .fa-plus {
-    margin-left: .7rem;
     height: 1.3rem;
     width: 1.3rem;
   }

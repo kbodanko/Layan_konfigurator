@@ -18,10 +18,9 @@ let h2value = document.querySelector('.h2_button_value_wrapper');
 let choosedProductsName = document.querySelector('h2');
 valueWrapper.addEventListener('click', showBasket);
 let summaryButton = document.querySelector('.summary_button');
-
 summaryButton.addEventListener('click', showBasket);
 window.addEventListener('resize', function () {
-    if (swiperWrapper.style.transform !== 'translate(0)') {
+    if (swiperWrapper.style.transform !== 'translate(0px)') {
         windowResizeAdjust();
     }
 });
@@ -35,7 +34,9 @@ let basket = document.querySelector('.summary_basket');
 let products = document.querySelector('.products');
 let choosedProducts = document.querySelector('.choosed_products_wrapper');
 let swiperWrapper = document.querySelector('.swiper_aligned_wrapper');
+swiperWrapper.style.transform = 'translate(0)';
 function showBasket() {
+    console.log('showBasket');
     products.style.transform = 'translate(-100vw)';
     // products.style.position = 'absolute';
     // choosedProducts.style.position = 'absolute';
@@ -64,6 +65,7 @@ function windowResizeAdjust() {
     }
 }
 function showProductsOptions() {
+    console.log('showProductsOptions');
     console.log('slide');
     products.style.transform = 'translate(-150vw)';
     // products.style.position = 'absolute';
@@ -91,6 +93,7 @@ function showProductsOptions() {
 }
 backIcon.addEventListener('click', showProducts);
 function showProducts() {
+    console.log('showProducts');
     // swiperWrapper.style.position = 'relative';
     swiperWrapper.style.transform = 'translate(0)';
     console.log('slide');
